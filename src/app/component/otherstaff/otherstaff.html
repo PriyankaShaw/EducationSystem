@@ -1,0 +1,25 @@
+
+<md-card>
+<h1>Other Staff</h1>
+    <div>
+
+        
+       
+ <md-input placeholder="Enter Name" [(ngModel)]="otherstaff.name"> </md-input>
+ <br/>
+        <md-input placeholder="Enter Gender" [(ngModel)]="otherstaff.gender"></md-input>
+        <br/>
+        <md-input placeholder="Enter age" [(ngModel)]="otherstaff.age"></md-input>
+        <br/>
+        <md-input placeholder="Enter Phone_no" [(ngModel)]="otherstaff.phoneNumber"></md-input>
+        <br/>
+        <md-input placeholder="Enter Date Of Birth" [(ngModel)]="otherstaff.dob"></md-input>
+        <br/>
+
+<button md-raised-button (click)="saveOtherstaff()">Save</button>
+
+<button md-raised-button (click)="cancelOtherstaff()">Cancel</button>   
+
+    </div>
+
+</md-card>

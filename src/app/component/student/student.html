@@ -1,0 +1,22 @@
+<md-card>
+    <h1>Student</h1>
+    <div>
+        <md-radio-group>
+
+            <!--<md-radio-button name="stuType" (click)="setStudentType('p')"> Primary</md-radio-button><br>
+            <md-radio-button name="stuType" (click)="setStudentType('s')"> Secondary</md-radio-button><br>-->
+
+            <md-radio-button name="stuType" (click)="setStudentType('p')"> Primary</md-radio-button><br>
+            <md-radio-button name="stuType" (click)="setStudentType('s')"> Secondary</md-radio-button><br>
+        </md-radio-group>
+        <div *ngIf="renderStudentDetails">
+
+            <student-marks [student]="student"></student-marks>
+            <md-select placeholder="Teacher">
+                <md-option *ngFor="let teacher of teacherService.getTeachers()" [value]="teacher.name">{{teacher.name}}
+                </md-option>
+            </md-select>
+
+        </div>
+    </div>
+</md-card>

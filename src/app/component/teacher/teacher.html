@@ -1,0 +1,23 @@
+<md-card>
+
+    <div>
+ 
+       <h1>Teacher</h1>
+ <md-input placeholder="Enter Name" [(ngModel)]="teacher.name"> </md-input>
+ <br/>
+        <md-input placeholder="Enter Gender" [(ngModel)]="teacher.gender"></md-input>
+        <br/>
+        <md-input placeholder="Enter age" [(ngModel)]="teacher.age"></md-input>
+        <br/>
+        <md-input placeholder="Enter Phone_no" [(ngModel)]="teacher.phoneNumber"></md-input>
+        <br/>
+        <md-input placeholder="Enter Date Of Birth" [(ngModel)]="teacher.dob"></md-input>
+        <br/>
+
+
+<button md-raised-button (click)="saveTeacher()">Save</button>
+<button md-raised-button (click)="cancelTeacher()">Cancel</button>
+
+    </div>
+
+</md-card>
