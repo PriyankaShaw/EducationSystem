@@ -1,6 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { Employee } from './../../entities/employee/employee.entity'
 import {Otherstaff} from './../../entities/otherstaff/otherstaff.entity';
+import { ActivatedRoute, Params } from '@angular/router';
+import { Location }               from '@angular/common';
+
 @Component({
     selector: 'otherstaff_component',
     templateUrl: './otherstaff.html'

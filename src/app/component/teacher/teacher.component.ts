@@ -2,6 +2,9 @@ import { Component, Input } from '@angular/core';
 import { Employee } from './../../entities/employee/employee.entity'
 import {Teacher} from './../../entities/teacher/teacher.entity';
 import {TeacherService} from './../../services/teacherService/teacher.service';
+import { ActivatedRoute, Params } from '@angular/router';
+import { Location }               from '@angular/common';
+
 
 
 @Component({

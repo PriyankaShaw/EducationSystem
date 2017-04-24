@@ -1,8 +1,16 @@
 
 <md-grid-list cols="3">
-  <md-grid-tile><student_component></student_component></md-grid-tile>
-  <md-grid-tile><teacher_component></teacher_component></md-grid-tile>
-  <md-grid-tile><otherstaff_component></otherstaff_component></md-grid-tile>
+
+   <nav>
+      <a routerLink="/student" routerLinkActive="active">student</a>
+      <a routerLink="/teacher" routerLinkActive="active">teacher</a>
+      <a routerLink="/otherstaff" routerLinkActive="active">otherstaff</a>
+      
+    </nav>
+    <router-outlet></router-outlet>
+ <!-- <md-grid-tile><student_component></student_component></md-grid-tile>
+ // <md-grid-tile><teacher_component></teacher_component></md-grid-tile>
+  //<md-grid-tile><otherstaff_component></otherstaff_component></md-grid-tile>-->
 </md-grid-list>
 
 

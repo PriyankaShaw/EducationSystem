@@ -4,6 +4,8 @@ import { Primary } from './../../entities/students/primary.student';
 import { Secondary } from './../../entities/students/secondary.student';
 import {Teacher} from './../../entities/teacher/teacher.entity';
 import {TeacherService} from './../../services/teacherService/teacher.service';
+import { ActivatedRoute, Params } from '@angular/router';
+import { Location }               from '@angular/common';
 
 
 @Component({
